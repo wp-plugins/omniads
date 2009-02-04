@@ -4,7 +4,7 @@
 Plugin Name: OmniAds
 Plugin URI: http://www.naden.de/blog/omniads
 Description: Ad management plugin for Wordpress with all the features you need for smooth workflow. See the Plugin Homepage for a full list of features. German: Plugin zur Verwaltung von Werbeeinbindeungen aller Art in Wordpress. Die komplette Liste der features findest du auf der Plugin Homepage.
-Version: 0.5
+Version: 0.51
 Author: Naden Badalgogtapeh
 Author URI: http://www.naden.de/blog
 */
@@ -12,6 +12,7 @@ Author URI: http://www.naden.de/blog
 /*
  * History:
  *
+ * v0.51 04.02.2009  channel name length expanded to 200 chars
  * v0.5 21.01.2009  added widgets for ad delivery in sidebar
  * v0.4 20.01.2009  added <!--omniads:CHANNEL_NAME--> for in content ads
  * v0.3 29.07.2008  added channel status
@@ -109,22 +110,22 @@ print <<<DATA
 <style type="text/css">
 table.omniads th a {
   font-weight: normal;
-  color: #d7d7d7;
+  color: #000;
   text-decoration:underline;
 }
 table.omniads th a:hover {
   font-weight: normal;
-  color: #d7d7d7;
+  color: #000;
   text-decoration:none;
 }
 table.omniads th a.order_by {
   font-weight: bold;
-  color: #d7d7d7;
+  color: #000;
   text-decoration:underline;
 }
 table.omniads th a.order_by:hover {
   font-weight: bold;
-  color: #d7d7d7;
+  color: #000;
   text-decoration:none;
 }
 table.omniads textarea {
@@ -325,6 +326,7 @@ DATA;
 
   function LoadOptions()
   {
+
     $this->options = get_option( $this->id );
 
     if( !$this->options )
@@ -354,14 +356,14 @@ DATA;
 
 		  $wpdb->query( $sql );
 		  
-      $wpdb->query( "INSERT INTO `{$this->tables[ 'channel' ]}` SET `name` = 'default', `status`=1" );
-      $wpdb->query( "INSERT INTO `{$this->tables[ 'channel' ]}` SET `name` = 'widget', `status`=1" );
+      $wpdb->query( "INSERT IGNORE INTO `{$this->tables[ 'channel' ]}` SET `name` = 'default', `status`=1" );
+      $wpdb->query( "INSERT IGNORE INTO `{$this->tables[ 'channel' ]}` SET `name` = 'widget', `status`=1" );
       
       $sql = <<<DATA
         CREATE TABLE IF NOT EXISTS `{$this->tables[ 'units' ]}` (
           `id` bigint(20) NOT NULL auto_increment,
           `status` smallint(1) NOT NULL,
-          `channel` varchar(20) NOT NULL,
+          `channel` varchar(200) NOT NULL,
           `title` varchar(200) NOT NULL,
           `content` text NOT NULL,
           `type` enum('HTML','PHP') NOT NULL default 'HTML',
