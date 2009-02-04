@@ -95,6 +95,7 @@ class OmniAds
     }
     else
     {
+		  add_action( 'wp_head', array( &$this, 'BlogHeader' ) );
       add_action( 'the_content', array( &$this, 'ContentFilter' ), 11 );
     }
     
@@ -132,6 +133,11 @@ table.omniads textarea {
 }
 </style>
 DATA;
+  }
+  
+  function BlogHeader()
+  {
+    printf( '<meta name="%s" content="%s/%s" />', $this->id, $this->name, $this->version );
   }
   
   function InitWidgets()
