@@ -137,7 +137,7 @@ DATA;
   
   function BlogHeader()
   {
-    printf( '<meta name="%s" content="%s/%s" />', $this->id, $this->name, $this->version );
+    printf( '<meta name="%s" content="%s/%s" />' . "\n", $this->id, $this->id, $this->version );
   }
   
   function InitWidgets()
