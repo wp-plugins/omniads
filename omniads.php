@@ -4,7 +4,7 @@
 Plugin Name: OmniAds
 Plugin URI: http://www.naden.de/blog/omniads
 Description: Ad management plugin for Wordpress with all the features you need for smooth workflow. See the Plugin Homepage for a full list of features. German: Plugin zur Verwaltung von Werbeeinbindeungen aller Art in Wordpress. Die komplette Liste der features findest du auf der Plugin Homepage.
-Version: 0.51
+Version: 0.52
 Author: Naden Badalgogtapeh
 Author URI: http://www.naden.de/blog
 */
@@ -12,7 +12,8 @@ Author URI: http://www.naden.de/blog
 /*
  * History:
  *
- * v0.51 04.02.2009  channel name length expanded to 200 chars
+ * v0.52 05.02.2009 added resizable textareas
+ * v0.51 04.02.2009 channel name length expanded to 200 chars
  * v0.5 21.01.2009  added widgets for ad delivery in sidebar
  * v0.4 20.01.2009  added <!--omniads:CHANNEL_NAME--> for in content ads
  * v0.3 29.07.2008  added channel status
@@ -38,7 +39,7 @@ class OmniAds
   {
     global $table_prefix;
 
-    $this->version    = '0.5';
+    $this->version    = '0.52';
     $this->id         = 'omniads';
     $this->name       = 'OmniAds Plugin v' . $this->version;
     $this->url        = 'http://www.naden.de/blog/omniads';
@@ -105,9 +106,13 @@ class OmniAds
 
   function AdminHeader()
   {
+    $url = get_bloginfo( 'wpurl' ) . '/wp-content/plugins/' . $this->id;
   
 print <<<DATA
 <style type="text/css">
+table.omniads th {
+  background-color: #EAF3FA;
+}
 table.omniads th a {
   font-weight: normal;
   color: #000;
@@ -134,6 +139,37 @@ table.omniads textarea {
 }
 </style>
 DATA;
+
+    if( stripos( $_SERVER[ 'REQUEST_URI' ], 'omniads/admin/options.php' ) !== false || 
+        stripos( $_SERVER[ 'REQUEST_URI' ], 'omniads/admin/units.php' ) !== false )
+    {
+print <<<DATA
+<style type="text/css">
+div.grippie {
+  background:#EEEEEE url({$url}/img/grippie.png) no-repeat scroll center 2px;
+  border-color:#DDDDDD;
+  border-style:solid;
+  border-width:0pt 1px 1px;
+  cursor:s-resize;
+  height:9px;
+  overflow:hidden;
+}
+.resizable-textarea textarea {
+  display:block;
+  margin-bottom:0pt;
+  width:95%;
+  height: 20%;
+}
+</style>
+<script type="text/javascript">
+if( window.jQuery ) {
+document.write( '<'+'script type="text/javascript" src="{$url}/js/jquery.textarearesizer.compressed.js"'+'><'+'/script'+'>' );
+jQuery(document).ready(function() { jQuery('textarea.resizable:not(.processed)').TextAreaResizer(); });
+}
+</script>
+DATA;
+    }
+
   }
   
   function BlogHeader()
@@ -446,7 +482,7 @@ DATA;
       }
       case 'textarea':
       {
-        return( sprintf( '<textarea name="%s" id="%s" cols="100" rows="5">%s</textarea>%s', $name, $id, ( empty( $value ) || count( $value ) == 0 ) ? $default : $value, empty( $faq ) ? '' : '<br />' . $faq ) );
+        return( sprintf( '<textarea name="%s" id="%s" cols="100" rows="5" class="resizable">%s</textarea>%s', $name, $id, ( empty( $value ) || count( $value ) == 0 ) ? $default : $value, empty( $faq ) ? '' : '<br />' . $faq ) );
       }
       case 'label':
       {

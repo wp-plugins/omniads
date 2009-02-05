@@ -1,16 +1,16 @@
 === OmniAds ===
 Contributors: Naden Badalgogtapeh
 Donate link: http://www.naden.de/blog/donate/
-Tags: ads, wordpress, ad, adsense, adserver, ad management, blog, money, widget, widgets, sidebar, advertisement, plugin, amazon
+Tags: ads, wordpress, ad, adsense, adserver, ad management, blog, money, widget, widgets, sidebar, advertisement, plugin, amazon, ebay, google
 Requires at least: 2.0
 Tested up to: 2.7
-Stable tag: 0.51
+Stable tag: 0.52
 
 Injects ads of any type to your wordpress blog in every place you like.
 
 == Description ==
 
-OmniAds can use very complex syntax to balance where and when ads are displayed and it's widget ready.
+OmniAds can use very complex syntax to balance where and when ads are displayed and it's widget ready and supports many advertising networks like eBay, Amazon, Google Adsense, [Captain Ad](http://www.naden.de/blog/shorturl/21 "Captain Ad"), [Layer Ads](http://www.naden.de/blog/shorturl/26 "Layer Ads"), [Contaxe](http://www.naden.de/blog/shorturl/27 "Contaxe") and many more
 
 OmniAds supports you with channels and two types of units. 
 
@@ -33,6 +33,15 @@ Sure, no matter what kind of ads, OmniAds delivers them all.
 = Is this plugin widget ready? =
 
 Yes, if you theme supports sidebar widgets, OmniAds delivers as many Widgets as you like.
+== Change Log ==
+
+* v0.52 05.02.2009 added resizable textareas
+* v0.51 04.02.2009 channel name length expanded to 200 chars
+* v0.5 21.01.2009  added widgets for ad delivery in sidebar
+* v0.4 20.01.2009  added <!--omniads:CHANNEL_NAME--> for in content ads
+* v0.3 29.07.2008  added channel status
+* v0.2 20.07.2008  added "more" channel for ad delivery after <!--more--> tag
+* v0.1 18.07.2008  initial release
 
 == Short Example ==
 
