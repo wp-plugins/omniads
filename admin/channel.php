@@ -49,7 +49,7 @@ $fields = array(
 <form name="" action="<?php print( get_bloginfo( 'wpurl' ) ); ?>/wp-admin/admin.php?page=omniads/admin/channel.php" method="post">
 <input type="hidden" name="cmd" value="save_channel" />
 
-<table class="form-table">
+<table class="widefat">
 <?php
 
 foreach( $fields as $k => $v )

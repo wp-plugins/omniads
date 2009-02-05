@@ -52,7 +52,7 @@ $fields = array(
 <h2>Units</h2>
 <form name="" action="<?php print( get_bloginfo( 'wpurl' ) ); ?>/wp-admin/admin.php?page=omniads/admin/units.php" method="post">
 <input type="hidden" name="cmd" value="save_unit" />
-<table class="form-table">
+<table class="widefat">
 <?php
 
 foreach( $fields as $k => $v )

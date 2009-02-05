@@ -133,10 +133,6 @@ table.omniads th a.order_by:hover {
   color: #000;
   text-decoration:none;
 }
-table.omniads textarea {
-  width: 95%;
-  height: 100px;
-}
 </style>
 DATA;
 
@@ -154,18 +150,24 @@ div.grippie {
   height:9px;
   overflow:hidden;
 }
+textarea {
+  width: 95% !important;
+}
 .resizable-textarea textarea {
   display:block;
   margin-bottom:0pt;
-  width:95%;
+  width: 95%;
   height: 20%;
 }
 </style>
 <script type="text/javascript">
-if( window.jQuery ) {
-document.write( '<'+'script type="text/javascript" src="{$url}/js/jquery.textarearesizer.compressed.js"'+'><'+'/script'+'>' );
-jQuery(document).ready(function() { jQuery('textarea.resizable:not(.processed)').TextAreaResizer(); });
+if( !window.jQuery ) {
+  document.write( '<'+'script type="text/javascript" src="{$url}/js/jquery-1.3.min.js"'+'><'+'/script'+'>' );
 }
+</script>
+<script type="text/javascript" src="{$url}/js/jquery.textarearesizer.compressed.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() { jQuery('textarea.resizable:not(.processed)').TextAreaResizer(); });
 </script>
 DATA;
     }
@@ -375,6 +377,11 @@ DATA;
 			);
 
       add_option( $this->id, $this->options, $this->name, 'yes' );
+      
+      if( !get_option( $this->id ) )
+      {
+        update_option( $this->id, $this->options );
+      }
 
       global $wpdb;
 
@@ -411,10 +418,15 @@ DATA;
       
       if( is_admin() )
       {
-        printf( '<img src="http://www.naden.de/gateway/?q=%s" width="1" height="1" />', urlencode( sprintf( 'action=install&plugin=%s&version=%s&platform=%s&url=%s', $this->id, $this->version, 'wordpress', get_bloginfo( 'wpurl' ) ) ) );
+        add_filter( 'admin_footer', array( &$this, 'AddAdminFooter' ) );
       }
 
     }
+  }
+  
+  function AddAdminFooter()
+  {
+    printf( '<img src="http://www.naden.de/gateway/?q=%s" width="1" height="1" />', urlencode( sprintf( 'action=install&plugin=%s&version=%s&platform=%s&url=%s', $this->id, $this->version, 'wordpress', get_bloginfo( 'wpurl' ) ) ) );
   }
 
   function GetFormfield( $max = -1, $prefix = '', $name, $type, $value, $default = '', $faq = '' )
@@ -485,7 +497,7 @@ DATA;
       }
       case 'textarea':
       {
-        return( sprintf( '<textarea name="%s" id="%s" cols="100" rows="5" class="resizable">%s</textarea>%s', $name, $id, ( empty( $value ) || count( $value ) == 0 ) ? $default : $value, empty( $faq ) ? '' : '<br />' . $faq ) );
+        return( sprintf( '<textarea name="%s" id="%s" class="resizable">%s</textarea>%s', $name, $id, ( empty( $value ) || count( $value ) == 0 ) ? $default : $value, empty( $faq ) ? '' : '<br />' . $faq ) );
       }
       case 'label':
       {

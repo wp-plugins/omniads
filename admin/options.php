@@ -23,7 +23,7 @@ switch( @$_REQUEST[ 'cmd' ] )
 <h2><?php _e( 'Options', $OmniAds->id ) ?></h2>
 <form name="" action="<?php print( get_bloginfo( 'wpurl' ) ); ?>/wp-admin/admin.php?page=omniads/admin/options.php" method="post">
 <input type="hidden" name="cmd" value="save_options" />
-<table class="form-table">
+<table class="widefat">
 <?php
 
 foreach( $fields as $k => $v )
