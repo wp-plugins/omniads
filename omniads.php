@@ -4,7 +4,7 @@
 Plugin Name: OmniAds
 Plugin URI: http://www.naden.de/blog/omniads
 Description: Ad management plugin for Wordpress with all the features you need for smooth workflow. See the Plugin Homepage for a full list of features. German: Plugin zur Verwaltung von Werbeeinbindeungen aller Art in Wordpress. Die komplette Liste der features findest du auf der Plugin Homepage.
-Version: 0.52
+Version: 0.53
 Author: Naden Badalgogtapeh
 Author URI: http://www.naden.de/blog
 */
@@ -12,6 +12,7 @@ Author URI: http://www.naden.de/blog
 /*
  * History:
  *
+ * v0.53 17.02.2009 small bugfix for global exclude list
  * v0.52 05.02.2009 added resizable textareas
  * v0.51 04.02.2009 channel name length expanded to 200 chars
  * v0.5 21.01.2009  added widgets for ad delivery in sidebar
@@ -39,7 +40,7 @@ class OmniAds
   {
     global $table_prefix;
 
-    $this->version    = '0.52';
+    $this->version    = '0.53';
     $this->id         = 'omniads';
     $this->name       = 'OmniAds Plugin v' . $this->version;
     $this->url        = 'http://www.naden.de/blog/omniads';
@@ -275,7 +276,7 @@ DATA;
   {
     if( $this->options[ 'exclude' ] )
     {
-      foreach( explode( "\n", (array)$this->options[ 'exclude' ] ) as $exclude )
+      foreach( explode( "\n", @$this->options[ 'exclude' ] ) as $exclude )
       {
         $exclude = trim( $exclude );
         
