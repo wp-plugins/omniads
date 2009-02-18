@@ -35,6 +35,7 @@ Sure, no matter what kind of ads, OmniAds delivers them all.
 Yes, if you theme supports sidebar widgets, OmniAds delivers as many Widgets as you like.
 == Change Log ==
 
+* v0.53 17.02.2009 small fix for global exclusion list
 * v0.52 05.02.2009 added resizable textareas
 * v0.51 04.02.2009 channel name length expanded to 200 chars
 * v0.5 21.01.2009  added widgets for ad delivery in sidebar
