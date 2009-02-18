@@ -4,7 +4,7 @@ Donate link: http://www.naden.de/blog/donate/
 Tags: ads, wordpress, ad, adsense, adserver, ad management, blog, money, widget, widgets, sidebar, advertisement, plugin, amazon, ebay, google
 Requires at least: 2.0
 Tested up to: 2.7
-Stable tag: 0.52
+Stable tag: 0.53
 
 Injects ads of any type to your wordpress blog in every place you like.
 
