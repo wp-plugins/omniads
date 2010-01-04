@@ -1,0 +1,365 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: omniads\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-04 23:48+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: omniads.php:204
+#: svn/tags/0.5/omniads.php:181
+#: svn/tags/0.51/omniads.php:182
+#: svn/tags/0.52/omniads.php:220
+msgid "Select Channel or Unit to display:"
+msgstr "Channel oder Unit aus wählen:"
+
+#: omniads.php:317
+#: svn/tags/0.5/omniads.php:322
+#: svn/tags/0.51/omniads.php:323
+#: svn/tags/0.52/omniads.php:361
+msgid "Help"
+msgstr "Hilfe"
+
+#: omniads.php:442
+#: svn/tags/0.5/omniads.php:433
+#: svn/tags/0.51/omniads.php:435
+#: svn/tags/0.52/omniads.php:486
+msgid "yes"
+msgstr "ja"
+
+#: omniads.php:446
+#: svn/tags/0.5/omniads.php:437
+#: svn/tags/0.51/omniads.php:439
+#: svn/tags/0.52/omniads.php:490
+msgid "no"
+msgstr "nein"
+
+#: omniads.php:796
+#: svn/tags/0.5/omniads.php:793
+#: svn/tags/0.51/omniads.php:795
+#: svn/tags/0.52/omniads.php:846
+msgid "sort by this col"
+msgstr "sortiere nach Spalte"
+
+#: omniads.php:810
+#: svn/tags/0.5/omniads.php:808
+#: svn/tags/0.51/omniads.php:810
+#: svn/tags/0.52/omniads.php:861
+msgid "Units"
+msgstr "Units"
+
+#: omniads.php:828
+#: admin/units.php:44
+#: admin/units.php:127
+#: svn/tags/0.5/omniads.php:827
+#: svn/tags/0.5/admin/units.php:44
+#: svn/tags/0.5/admin/units.php:127
+#: svn/tags/0.51/omniads.php:829
+#: svn/tags/0.51/admin/units.php:44
+#: svn/tags/0.51/admin/units.php:127
+#: svn/tags/0.52/omniads.php:880
+msgid "Channel"
+msgstr "Channel"
+
+#: omniads.php:1137
+#: omniads.php:1160
+#: svn/tags/0.5/omniads.php:1156
+#: svn/tags/0.5/omniads.php:1183
+#: svn/tags/0.51/omniads.php:1158
+#: svn/tags/0.51/omniads.php:1185
+#: svn/tags/0.52/omniads.php:1209
+#: svn/tags/0.52/omniads.php:1236
+msgid "Are you sure?"
+msgstr "Bist du sicher?"
+
+#: omniads.php:1137
+#: omniads.php:1160
+#: svn/tags/0.5/omniads.php:1156
+#: svn/tags/0.5/omniads.php:1183
+#: svn/tags/0.51/omniads.php:1158
+#: svn/tags/0.51/omniads.php:1185
+#: svn/tags/0.52/omniads.php:1209
+#: svn/tags/0.52/omniads.php:1236
+msgid "delete"
+msgstr "löschen"
+
+#: omniads.php:1141
+#: omniads.php:1164
+#: svn/tags/0.5/omniads.php:1160
+#: svn/tags/0.5/omniads.php:1187
+#: svn/tags/0.51/omniads.php:1162
+#: svn/tags/0.51/omniads.php:1189
+#: svn/tags/0.52/omniads.php:1213
+#: svn/tags/0.52/omniads.php:1240
+msgid "active"
+msgstr "aktiv"
+
+#: omniads.php:1141
+#: omniads.php:1164
+#: svn/tags/0.5/omniads.php:1160
+#: svn/tags/0.5/omniads.php:1187
+#: svn/tags/0.51/omniads.php:1162
+#: svn/tags/0.51/omniads.php:1189
+#: svn/tags/0.52/omniads.php:1213
+#: svn/tags/0.52/omniads.php:1240
+msgid "inactive"
+msgstr "inaktiv"
+
+#: omniads.php:1160
+#: svn/tags/0.5/omniads.php:1183
+#: svn/tags/0.51/omniads.php:1185
+#: svn/tags/0.52/omniads.php:1236
+msgid "edit"
+msgstr "bearbeiten"
+
+#: admin/channel.php:13
+#: svn/tags/0.5/admin/channel.php:13
+#: svn/tags/0.51/admin/channel.php:13
+msgid "Channel saved!"
+msgstr "Der Channel wurde gespeichert!"
+
+#: admin/channel.php:26
+#: svn/tags/0.5/admin/channel.php:26
+#: svn/tags/0.51/admin/channel.php:26
+msgid "Channel deleted!"
+msgstr "Der Channel wurde gelöscht!"
+
+#: admin/channel.php:32
+#: admin/units.php:19
+#: svn/tags/0.5/admin/channel.php:32
+#: svn/tags/0.5/admin/units.php:19
+#: svn/tags/0.51/admin/channel.php:32
+#: svn/tags/0.51/admin/units.php:19
+msgid "Status changed!"
+msgstr "Status geändert!"
+
+#: admin/channel.php:40
+#: admin/units.php:41
+#: svn/tags/0.5/admin/channel.php:40
+#: svn/tags/0.5/admin/units.php:41
+#: svn/tags/0.51/admin/channel.php:40
+#: svn/tags/0.51/admin/units.php:41
+msgid "Name"
+msgstr "Name"
+
+#: admin/channel.php:41
+#: admin/units.php:42
+#: svn/tags/0.5/admin/channel.php:41
+#: svn/tags/0.5/admin/units.php:42
+#: svn/tags/0.51/admin/channel.php:41
+#: svn/tags/0.51/admin/units.php:42
+msgid "Active"
+msgstr "Aktiv"
+
+#: admin/channel.php:76
+#: admin/options.php:46
+#: admin/units.php:98
+#: svn/tags/0.5/admin/channel.php:76
+#: svn/tags/0.5/admin/options.php:46
+#: svn/tags/0.5/admin/units.php:98
+#: svn/tags/0.51/admin/channel.php:76
+#: svn/tags/0.51/admin/options.php:46
+#: svn/tags/0.51/admin/units.php:98
+msgid "save"
+msgstr "speichern"
+
+#: admin/channel.php:85
+#: admin/units.php:107
+#: svn/tags/0.5/admin/channel.php:85
+#: svn/tags/0.5/admin/units.php:107
+#: svn/tags/0.51/admin/channel.php:85
+#: svn/tags/0.51/admin/units.php:107
+msgid "show"
+msgstr "anzeigen"
+
+#: admin/channel.php:103
+#: admin/units.php:126
+#: svn/tags/0.5/admin/channel.php:103
+#: svn/tags/0.5/admin/units.php:126
+#: svn/tags/0.51/admin/channel.php:103
+#: svn/tags/0.51/admin/units.php:126
+msgid "Status"
+msgstr "Status"
+
+#: admin/channel.php:104
+#: admin/units.php:129
+#: svn/tags/0.5/admin/channel.php:104
+#: svn/tags/0.5/admin/units.php:129
+#: svn/tags/0.51/admin/channel.php:104
+#: svn/tags/0.51/admin/units.php:129
+msgid "Title"
+msgstr "Titel"
+
+#: admin/channel.php:116
+#: admin/units.php:142
+#: svn/tags/0.5/admin/channel.php:116
+#: svn/tags/0.5/admin/units.php:142
+#: svn/tags/0.51/admin/channel.php:116
+#: svn/tags/0.51/admin/units.php:142
+msgid "Pages"
+msgstr "Seiten"
+
+#: admin/help.php:3
+#: svn/tags/0.5/admin/help.php:3
+#: svn/tags/0.51/admin/help.php:3
+msgid "How to use"
+msgstr "Einbindung"
+
+#: admin/help.php:5
+#: svn/tags/0.5/admin/help.php:5
+#: svn/tags/0.51/admin/help.php:5
+#, fuzzy
+msgid "This is just a short overview of what OmniAds can do for you. See the the <a href=\"http://www.naden.de/blog/ads-wordpress-plugin\" target=\"_blank\">plugin homepage</a> for a full documentation."
+msgstr "Dies ist nur eine Kurzübersicht aller Features. Für eine ausführliche Dokumentation besuche die <a href=\"http://www.naden.de/blog/ads-wordpress-plugin\" target=\"_blank\">plugin homepage</a>."
+
+#: admin/help.php:7
+#: svn/tags/0.5/admin/help.php:7
+#: svn/tags/0.51/admin/help.php:7
+msgid "Only activ units are shown!"
+msgstr "Es werden nur aktive Units angezeigt."
+
+#: admin/help.php:10
+#: svn/tags/0.5/admin/help.php:10
+#: svn/tags/0.51/admin/help.php:10
+msgid "Display channel in template"
+msgstr "Zeige Channel an bel. Stelle im Template an."
+
+#: admin/help.php:15
+#: svn/tags/0.5/admin/help.php:15
+#: svn/tags/0.51/admin/help.php:15
+msgid "Display unit in template"
+msgstr "Zeige Unit an bel. Stelle im Template an."
+
+#: admin/help.php:20
+#: svn/tags/0.5/admin/help.php:20
+#: svn/tags/0.51/admin/help.php:20
+msgid "Display channel in post or page content"
+msgstr "Zeige Channel an bel. Stelle in einem Post oder einer Page an."
+
+#: admin/help.php:25
+#: svn/tags/0.5/admin/help.php:25
+#: svn/tags/0.51/admin/help.php:25
+msgid "Display unit in post or page content"
+msgstr "Zeige Unit an bel. Stelle in einem Post oder einer Page an."
+
+#: admin/help.php:30
+#: svn/tags/0.5/admin/help.php:30
+#: svn/tags/0.51/admin/help.php:30
+msgid "Display channel in content after &lt;!--more--&gt; tag"
+msgstr "Zeige Channel nach dem &lt;!--more--&gt; tag an."
+
+#: admin/help.php:31
+#: svn/tags/0.5/admin/help.php:31
+#: svn/tags/0.51/admin/help.php:31
+msgid "Associate unit whith channel <em>more</em>."
+msgstr "Weise der Unit den Channel <em>more</em> zu."
+
+#: admin/options.php:5
+#: svn/tags/0.5/admin/options.php:5
+#: svn/tags/0.51/admin/options.php:5
+msgid "Widgets"
+msgstr "Widgets"
+
+#: admin/options.php:5
+#: svn/tags/0.5/admin/options.php:5
+#: svn/tags/0.51/admin/options.php:5
+msgid "Number of wanted sidebar widgets."
+msgstr "Anzahl der gewünschten Sidebar Widgets."
+
+#: admin/options.php:6
+#: svn/tags/0.5/admin/options.php:6
+#: svn/tags/0.51/admin/options.php:6
+msgid "Limit"
+msgstr "Anzahl"
+
+#: admin/options.php:6
+#: svn/tags/0.5/admin/options.php:6
+#: svn/tags/0.51/admin/options.php:6
+msgid "Number of units/channel to display in admin panel per page."
+msgstr "Anzahl der Units/Channel, die im Admin-Bereich pro Seite angezeigt werden."
+
+#: admin/options.php:7
+#: svn/tags/0.5/admin/options.php:7
+#: svn/tags/0.51/admin/options.php:7
+msgid "Exclude"
+msgstr "Ausschliessen"
+
+#: admin/options.php:7
+#: svn/tags/0.5/admin/options.php:7
+#: svn/tags/0.51/admin/options.php:7
+msgid "No ads are displayed, if string matches $_SERVER[ 'REQUEST_URI' ]."
+msgstr "Matcht ein String mit $_SERVER[ 'REQUEST_URI' ], wird keine Werbung angezeigt."
+
+#: admin/options.php:15
+#: svn/tags/0.5/admin/options.php:15
+#: svn/tags/0.51/admin/options.php:15
+msgid "Settings saved!"
+msgstr "Die Einstellungen wurden gespeichert!"
+
+#: admin/options.php:24
+msgid "Directory not readable: "
+msgstr "Verzeichnis ist nicht lesbar: "
+
+#: admin/options.php:27
+#: svn/tags/0.5/admin/options.php:23
+#: svn/tags/0.51/admin/options.php:23
+msgid "Options"
+msgstr "Einstellungen"
+
+#: admin/units.php:13
+#: svn/tags/0.5/admin/units.php:13
+#: svn/tags/0.51/admin/units.php:13
+msgid "Unit saved!"
+msgstr "Die Unit wurde gespeichert!"
+
+#: admin/units.php:27
+#: svn/tags/0.5/admin/units.php:27
+#: svn/tags/0.51/admin/units.php:27
+msgid "Unit loaded!"
+msgstr "Unit geladen!"
+
+#: admin/units.php:33
+#: svn/tags/0.5/admin/units.php:33
+#: svn/tags/0.51/admin/units.php:33
+msgid "Unit deleted!"
+msgstr "Die Unit wurde gelöscht!"
+
+#: admin/units.php:43
+#: admin/units.php:128
+#: svn/tags/0.5/admin/units.php:43
+#: svn/tags/0.5/admin/units.php:128
+#: svn/tags/0.51/admin/units.php:43
+#: svn/tags/0.51/admin/units.php:128
+msgid "Type"
+msgstr "Type"
+
+#: admin/units.php:45
+#: svn/tags/0.5/admin/units.php:45
+#: svn/tags/0.51/admin/units.php:45
+msgid "Code"
+msgstr "Code"
+
+#~ msgid "Warning, \"%s\" not readable!"
+#~ msgstr "Achtung, \"%s\" ist nicht lesbar!"
+#~ msgid "Seiten"
+#~ msgstr "Pages"
+#~ msgid "Excludelist was saved!"
+#~ msgstr "Die Auschlussliste wurde gespeichert."
+
+#, fuzzy
+#~ msgid "Aktive"
+#~ msgstr "Aktiv"
+#~ msgid ""
+#~ "Matcht ein String mit $_SERVER[ 'REQUEST_URI' ], wird keine Werbung "
+#~ "angezeigt."
+#~ msgstr ""
+#~ "Matcht ein String mit $_SERVER[ 'REQUEST_URI' ], wird keine Werbung "
+#~ "angezeigt."
+
