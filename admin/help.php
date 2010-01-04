@@ -8,12 +8,12 @@
 
 <p>
 <h4><?php _e( 'Display channel in template', $OmniAds->id ); ?></h4>
-<code>&lt;?php if( function_exists( 'omniads_channel' ) ) omniads_channel( 'CHANNEL_NAME' ); ?&gt;</code>
+<code>&lt;?php if(function_exists('omniads_channel')) omniads_channel('CHANNEL_NAME'); ?&gt;</code>
 </p>
 
 <p>
 <h4><?php _e( 'Display unit in template', $OmniAds->id ); ?></h4>
-<code>&lt;?php if( function_exists( 'omniads_unit' ) ) omniads_unit( UNIT_ID ); ?&gt;</code>
+<code>&lt;?php if(function_exists('omniads_unit')) omniads_unit(UNIT_ID); ?&gt;</code>
 </p>
 
 <p>
@@ -27,8 +27,8 @@
 </p>
 
 <p>
-<h4><?php _e( 'Display channel in content after &lt;!--more--&gt; tag', $OmniAds->id ); ?></h4>
-<?php _e( 'Associate unit whith channel <em>more</em>.', $OmniAds->id ); ?>
+<h4><?php _e('Display channel in content after &lt;!--more--&gt; tag', $OmniAds->id); ?></h4>
+<?php _e('Associate unit whith channel <em>more</em>.', $OmniAds->id); ?>
 </p>
 
 </div>

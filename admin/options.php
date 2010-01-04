@@ -20,23 +20,23 @@ switch( @$_REQUEST[ 'cmd' ] )
 ?>
 <div class="wrap">
 <div align="center"><p><?=$OmniAds->name?> <a href="<?php print( $OmniAds->url ); ?>" target="_blank">Plugin Homepage</a></p></div>
-<h2><?php _e( 'Options', $OmniAds->id ) ?></h2>
+<?php if(!is_readable($OmniAds->path. '/units')) {
+  printf('<div align="center"><p><span style="color:red;">%s</span>%s</p></div>', __('Directory not readable: ', $OmniAds->id), $OmniAds->path. '/units');
+}
+?>
+<h2><?php _e('Options', $OmniAds->id); ?></h2>
 <form name="" action="<?php print( get_bloginfo( 'wpurl' ) ); ?>/wp-admin/admin.php?page=omniads/admin/options.php" method="post">
 <input type="hidden" name="cmd" value="save_options" />
 <table class="widefat">
 <?php
 
-foreach( $fields as $k => $v )
-{
+foreach($fields as $k => $v) {
+  if(array_key_exists($k, $fields)) {
+    $value = stripslashes($OmniAds->options[$k]);
 
-  if( array_key_exists( $k, $fields ) )
-  {
-    $value = stripslashes( $OmniAds->options[ $k ] );
-
-    printf(
-      '<tr valign="top"><th scope="row">%s</th><td>%s</td></tr>', 
+    printf('<tr valign="top"><th scope="row">%s</th><td>%s</td></tr>',
       $v[ 1 ], 
-      $OmniAds->GetFormfield( $v[ 0 ], 'options', $k, $v[ 3 ], $value, $v[ 5 ], $v[ 6 ] )
+      $OmniAds->GetFormfield($v[0], 'options', $k, $v[3], $value, $v[5], $v[6])
     );
   }
 }

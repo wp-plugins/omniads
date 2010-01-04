@@ -4,7 +4,7 @@ Donate link: http://www.naden.de/blog/donate/
 Tags: ads, wordpress, ad, adsense, adserver, ad management, blog, money, widget, widgets, sidebar, advertisement, plugin, amazon, ebay, google
 Requires at least: 2.0
 Tested up to: 2.7
-Stable tag: 0.53
+Stable tag: 0.54
 
 Injects ads of any type to your wordpress blog in every place you like.
 
@@ -32,9 +32,10 @@ Sure, no matter what kind of ads, OmniAds delivers them all.
 
 = Is this plugin widget ready? =
 
-Yes, if you theme supports sidebar widgets, OmniAds delivers as many Widgets as you like.
+Yes, if your theme supports sidebar widgets, OmniAds delivers as many Widgets as you like.
 == Change Log ==
 
+* v0.54 04.01.2010 added unit type file, little refactoring, fixed pagination
 * v0.53 17.02.2009 small fix for global exclusion list
 * v0.52 05.02.2009 added resizable textareas
 * v0.51 04.02.2009 channel name length expanded to 200 chars
