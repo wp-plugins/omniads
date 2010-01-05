@@ -42,7 +42,7 @@ $fields = array(
   'status'    => array( -1, __( 'Active', $OmniAds->id ), true, 'yesnoradio', 'text', '' ),
   'type'      => array( -1, __( 'Type', $OmniAds->id ), true, 'select', 'text', @$unit->type ),
   'channel'   => array( -1, __( 'Channel', $OmniAds->id ), true, 'select', 'text', @$unit->channel ),
-  'content'   => array( -1, __( 'Code', $OmniAds->id ), true, 'textarea', 'text', ''  )
+  'content'   => array( -1, __( 'Code or Filename', $OmniAds->id ), true, 'textarea', 'text', '', __('If unit is of type FILE, put the name of the file here!', $OmniAds->id))
 );
 
 ?>
@@ -87,7 +87,7 @@ foreach( $fields as $k => $v )
       printf(
         '<tr valign="top"><th scope="row">%s</th><td>%s</td></tr>', 
         $v[ 1 ], 
-        $OmniAds->GetFormfield( $v[ 0 ], 'unit', $k, $v[ 3 ], $value, $v[ 5 ] )
+        $OmniAds->GetFormfield( $v[ 0 ], 'unit', $k, $v[ 3 ], $value, $v[ 5 ], $v[6] )
       );
     }
   }
