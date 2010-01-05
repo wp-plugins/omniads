@@ -393,44 +393,35 @@ DATA;
   }
 
   function GetFormfield( $max = -1, $prefix = '', $name, $type, $value, $default = '', $faq = '') {
-    if( $max != -1 )
-    {
+    if($max != -1) {
       $max = ' maxlength="' . $max . '"';
     }
-    else
-    {
+    else {
       $max = '';
     }
 
-    if( !empty( $prefix ) )
-    {
+    if(!empty($prefix)) {
       $id = "{$prefix}_{$name}";
     }
-    else
-    {
+    else {
       $id = "{$name}";
     }
 
-    if( !empty( $prefix ) )
-    {
+    if(!empty($prefix)) {
       $name = "{$prefix}[{$name}]";
     }
 
-    switch( $type )
-    {
+    switch($type) {
       case 'select':
-      {
         $data = sprintf( '<select name="%s" id="%s">', $name, $id );
 
-        foreach( $value as $k => $v )
-        {
-          $data .= sprintf( '<option value="%s"%s>%s</option>', $v, $v == $default ? ' selected="selected"' : '', $v );
+        foreach($value as $k => $v) {
+          $data .= sprintf('<option value="%s"%s>%s</option>', $v, $v == $default ? ' selected="selected"' : '', $v);
         }
 
         $data .= '</select>';
         
         return $data;
-      }
       case 'hidden':
         return sprintf('<input type="hidden" name="%s" value=\'%s\' id="%s" />', $name, $value, $id);
       case 'text':
