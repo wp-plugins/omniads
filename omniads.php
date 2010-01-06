@@ -526,7 +526,7 @@ DATA;
         
           if(eregi('\.php$', $file)) {
             ob_start();
-            @include($file);
+            @include_once($file);
             $data = ob_get_clean();
           }
           else {
